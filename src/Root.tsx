@@ -1,6 +1,7 @@
 import React from 'react';
 import { Composition, delayRender, continueRender } from 'remotion';
 import { LLMExplainerVideo } from './LLMExplainerVideo';
+import { CreativeAIVideo } from './CreativeAIVideo';
 import './index.css';
 import { loadFont } from "@remotion/google-fonts/Tajawal";
 
@@ -24,6 +25,14 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="LLMExplainer"
         component={LLMExplainerVideo}
+        durationInFrames={4500}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="CreativeAI"
+        component={CreativeAIVideo}
         durationInFrames={4500}
         fps={30}
         width={1920}

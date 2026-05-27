@@ -1,4 +1,3 @@
-import React from "react";
 import React from 'react';
 import { useCurrentFrame, interpolate, AbsoluteFill, spring, useVideoConfig } from 'remotion';
 import { colorSystem } from '../design-system';

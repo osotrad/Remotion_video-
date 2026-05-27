@@ -1,14 +1,19 @@
-import React from "react";
 import React, { useMemo } from 'react';
 import { useCurrentFrame, random } from 'remotion';
 
 export const Particles: React.FC<{
   count: number;
-  color: string;
-  opacity: number;
-  size: [number, number];
-  speed: number;
-}> = ({ count, color, opacity, size, speed }) => {
+  color?: string;
+  opacity?: number;
+  size?: [number, number];
+  speed?: number;
+}> = ({
+  count,
+  color = "#ffffff",
+  opacity = 0.2,
+  size = [2, 10],
+  speed = 1,
+}) => {
   const frame = useCurrentFrame();
 
   const particles = useMemo(() => {

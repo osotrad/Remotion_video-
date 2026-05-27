@@ -1,4 +1,3 @@
-import React from "react";
 import React from 'react';
 import { AbsoluteFill, Sequence } from 'remotion';
 import { Scene1 } from './scenes/Scene1';

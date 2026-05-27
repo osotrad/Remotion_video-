@@ -1,4 +1,3 @@
-import React from "react";
 import React from 'react';
 import { interpolate, useCurrentFrame } from 'remotion';
 import { colorSystem } from '../design-system';
